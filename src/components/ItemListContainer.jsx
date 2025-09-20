@@ -6,8 +6,8 @@ const ItemListContainer = ({ message }) => {
       <img 
         src={logo} 
         alt="Logo Aura Bikinis" 
-        width="120"
-        height="120" 
+        width="300"
+        height="300" 
         className="mb-3"
       />
       <h2 className="fw-bold">{message}</h2>
