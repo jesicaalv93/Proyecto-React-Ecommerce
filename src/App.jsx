@@ -1,12 +1,12 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/nav-bar/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
   return (
     <>
       <NavBar />
-      <ItemListContainer message="¡Bienvenida a Aura Bikinis!" />
+      <ItemListContainer message="¡Bienvenida a Latir Oficial!" />
     </>
   );
 };

@@ -1,0 +1,29 @@
+/* Barra de navegación */
+.navbar {
+  background-color: #d9c3a3; /* Beige tierra */
+  padding: 0.5rem 1rem;
+}
+
+/* Links */
+.navbar .nav-link {
+  color: #5a3e2b; /* Marrón tierra */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #3b2a1d; /* Marrón más oscuro */
+}
+
+/* Logo */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+/* Carrito */
+.cart-widget {
+  color: #5a3e2b;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

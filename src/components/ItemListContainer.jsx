@@ -11,6 +11,8 @@ const ItemListContainer = ({ message }) => {
         className="mb-3"
       />
       <h2 className="fw-bold">{message}</h2>
+      <p className="mt-4">Diseñamos prendas versátiles y atemporales, pensadas para la mujer con estilo que valora la elegancia en lo simple.<br></br>
+        Cada pieza es de industria nacional, creada con dedicación y cuidado para acompañarte en todos tus momentos.</p>
     </div>
   );
 };
