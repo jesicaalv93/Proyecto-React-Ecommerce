@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Abrigos",
+        "image":"https://example.com/images/abrigos.jpg"
+    },
+    {
+        "id":2,
+        "name":"Blusas y Camisas",
+        "image": "https://example.com/images/blusas_y_camisas.jpg"
+    },
+    {
+        "id":3,
+        "name":"Pantalones y Faldas",
+        "image": "https://example.com/images/parte_de_abajo.jpg"
+    },
+    {
+        "id":4,
+        "name":"Remeras y Sweaters",
+        "image": "https://example.com/images/remeras_y_sweaters.jpg"
+    },
+    {
+        "id":5,
+        "name":"Accesorios",
+        "image": "https://example.com/images/accesorios.jpg"
+    }
+]
