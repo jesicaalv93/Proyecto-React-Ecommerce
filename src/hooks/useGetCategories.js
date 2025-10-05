@@ -1,27 +1,17 @@
-import {useState, useEffect} from 'react';
-import categories from '../data/categories.json';
-console.log('categorías cargadas:', categories);
+import { useState, useEffect } from "react";
+import categoriesData from "../data/categories.json";
 
+export const useGetCategories = () => {
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-export function useGetCategories() {
-    const [categoriesList, setCategoriesList] = useState([]);
-    const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulamos una carga asincrónica
+    setTimeout(() => {
+      setCategories(categoriesData);
+      setLoading(false);
+    }, 500);
+  }, []);
 
-useEffect(() => {
-    const getCategories = () => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(categories);
-            }, 1000); // Simulate network delay
-        });
-    };
-
-    getCategories().then((data) => {
-        setCategoriesList(data);
-        setLoading(false);
-    });
-}, []);
-
-return {categoriesList, loading};
-
-}
+  return { categories, loading };
+};

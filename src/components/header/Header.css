@@ -1,0 +1,11 @@
+.header-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-banner .header-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}

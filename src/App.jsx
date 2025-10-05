@@ -1,19 +1,23 @@
 import "./App.css";
 import NavBar from "./components/nav-bar/NavBar";
 import Home from "./components/Home";
-import ItemListContainer from "./components/ItemListContainer";
+import CategoriesListContainer from "./components/categories-list-container/CategoriesListContainer";
+import ProductsListContainer from "./components/products-list-container/ProductsListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
       <NavBar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<h2 className="text-center my-5">Categorías</h2>} />
+        <Route path="/categories" element={<CategoriesListContainer />} />
+        <Route path="/products:categoryId" element={<ProductsListContainer />} />
       </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
     </>
   );
 };

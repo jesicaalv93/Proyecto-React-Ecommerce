@@ -1,5 +1,5 @@
-import { useGetCategories } from "../hooks/useGetCategories"
-import CategoryItem from "./category-item/CategoryItem"
+import { useGetCategories } from "../../hooks/useGetCategories"
+import CategoryItem from "../category-item/CategoryItem"
 
 const ItemListContainer = () => {
   const { categories, loading } = useGetCategories()
