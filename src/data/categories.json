@@ -1,44 +1,37 @@
 [
   {
-    "id": 1,
+    "id": "abrigos",
     "titulo": "Abrigos",
-    "imagen": "/categorias/abrigos.jpg",
-    "tags": ["invierno", "moda", "chaquetas"]
+    "imagen": "/categorias/abrigos.jpg"
   },
   {
-    "id": 2,
+    "id": "remeras-y-blusas",
     "titulo": "Remeras y Blusas",
-    "imagen": "/categorias/remeras-blusas.jpg",
-    "tags": ["casual", "verano", "básicos"]
+    "imagen": "/categorias/remeras-blusas.jpg"
   },
   {
-    "id": 3,
+    "id": "vestidos",
     "titulo": "Vestidos",
-    "imagen": "/categorias/vestidos.jpg",
-    "tags": ["elegante", "femenino", "temporada"]
+    "imagen": "/categorias/vestidos.jpg"
   },
   {
-    "id": 4,
+    "id": "faldas-y-shorts",
     "titulo": "Faldas y Shorts",
-    "imagen": "/categorias/faldas-shorts.jpg",
-    "tags": ["primavera", "verano", "comodidad"]
+    "imagen": "/categorias/faldas-shorts.jpg"
   },
   {
-    "id": 5,
+    "id": "accesorios",
     "titulo": "Accesorios",
-    "imagen": "/categorias/accesorios.jpg",
-    "tags": ["complementos", "detalles", "joyas"]
+    "imagen": "/categorias/accesorios.jpg"
   },
   {
-    "id": 6,
+    "id": "pantalones",
     "titulo": "Pantalones",
-    "imagen": "/categorias/pantalones.jpg",
-    "tags": ["urbano", "comodidad", "jeans"]
+    "imagen": "/categorias/pantalones.jpg"
   },
   {
-    "id": 7,
+    "id": "tejidos",
     "titulo": "Tejidos",
-    "imagen": "/categorias/tejidos.jpg",
-    "tags": ["artesanal", "suéter", "otoño"]
+    "imagen": "/categorias/tejidos.jpg"
   }
 ]
