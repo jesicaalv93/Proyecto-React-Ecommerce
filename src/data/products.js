@@ -11,7 +11,7 @@ export const products = [
   {
     id: 2,
     titulo: "Short de lino",
-    categoryId: "shorts-y-faldas",
+    categoryId: "faldas-y-shorts",
     precio: 80000,
     descripcion: "Short 100% lino natural con cintura elástica. Fresco y liviano para todos los días.",
     imagen: "/public/productos/short-lino.jpg",
