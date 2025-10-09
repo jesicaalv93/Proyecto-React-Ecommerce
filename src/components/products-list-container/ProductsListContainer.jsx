@@ -1,20 +1,50 @@
-import { useGetCategories } from "../../hooks/useGetCategories"
-import CategoryItem from "../category-item/CategoryItem"
+import { useParams, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import productsData from "../../data/products";
 
-const ItemListContainer = () => {
-  const { categories, loading } = useGetCategories()
+const ProductsListContainer = () => {
+  const { categoryId } = useParams();
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-  // console.log("Categories y loading desde hook: ", categories, loading)
-
-  if (loading) return <p>Cargando...</p>
+  useEffect(() => {
+    if (categoryId) {
+      const filtered = productsData.filter(
+        (product) => product.category === categoryId
+      );
+      setFilteredProducts(filtered);
+    } else {
+      setFilteredProducts(productsData);
+    }
+  }, [categoryId]);
 
   return (
-    <>
-      {categories.map((category, index) => (
-        <CategoryItem key={index} category={category} />
-      ))}
-    </>
-  )
-}
+    <div className="container my-4">
+      <h2 className="mb-3 text-center">
+        {categoryId ? `Productos de ${categoryId}` : "Todos los productos"}
+      </h2>
 
-export default ItemListContainer
+      <div className="row">
+        {filteredProducts.map((product) => (
+          <div key={product.id} className="col-md-4 mb-3">
+            <div className="card h-100">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">{product.title}</h5>
+                <p>${product.price}</p>
+                <NavLink to={`/item/${product.id}`} className="btn btn-dark">
+                  Ver detalle
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ProductsListContainer;
