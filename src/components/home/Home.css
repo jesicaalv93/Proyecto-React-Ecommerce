@@ -1,0 +1,37 @@
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card-img-wrapper:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.btn-terra {
+  border: 1px solid #5A3E36;
+  border-radius: 5px;
+  color: #5A3E36;
+  background-color: #F5E8DD;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-terra:hover {
+  background-color: #5A3E36;        /* Marrón oscuro al pasar el mouse */
+  color: #F5E8DD;                   /* Texto en beige claro */
+}

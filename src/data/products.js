@@ -7,6 +7,7 @@ export const products = [
     descripcion: "Camisa de satén suave con lazo y bolsillos frontales. Ideal para un look relajado y elegante.",
     imagen: "/public/productos/blusa-lucero.jpg",
     stock: 10,
+    destacado: true
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const products = [
     descripcion: "Short 100% lino natural con cintura elástica. Fresco y liviano para todos los días.",
     imagen: "/public/productos/short-lino.jpg",
     stock: 8,
+    destacado: false
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const products = [
     descripcion: "Vestido amplio de gasa con lazo en el cuello y mangas globo. Atemporal y cómodo.",
     imagen: "/public/productos/vestido-bambu.jpg",
     stock: 6,
+    destacado: true
   },
 ];
 

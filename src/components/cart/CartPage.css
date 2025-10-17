@@ -1,0 +1,17 @@
+.cart-widget {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-badge {
+  font-size: 0.8rem;
+}
+
+.cart-page img {
+  width: 50px;       /* tamaño miniatura más pequeño */
+  height: 50px;
+  object-fit: cover;  /* mantiene proporción y recorta lo que sobra */
+  border-radius: 5px;
+}

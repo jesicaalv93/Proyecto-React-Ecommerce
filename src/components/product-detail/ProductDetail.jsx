@@ -18,14 +18,16 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail-container container my-5">
-      <div className="row">
-        <div className="col-md-6">
-          <img
-            src={product.imagen}
-            alt={product.titulo}
-            className="product-image img-fluid rounded"
-          />
-        </div>
+  <div className="row">
+    <div className="col-md-6">
+      <div className="product-image-wrapper">
+        <img
+          src={product.imagen}
+          alt={product.titulo}
+          className="product-image img-fluid rounded"
+        />
+      </div>
+    </div>
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <h2 className="product-title fw-bold">{product.titulo}</h2>
           <p className="product-description text-muted">{product.descripcion}</p>

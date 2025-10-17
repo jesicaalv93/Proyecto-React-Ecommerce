@@ -1,6 +1,17 @@
+.product-image-wrapper {
+  overflow: hidden;        /* Evita que la imagen sobresalga al hacer zoom */
+  border-radius: 0.5rem;   /* Mantiene los bordes redondeados */
+}
+
 .product-image {
-  max-height: 400px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
+
+.product-image-wrapper:hover .product-image {
+  transform: scale(1.2);   /* Zoom al pasar el mouse */
 }
 
 .product-title {
