@@ -27,3 +27,22 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* Dropdown personalizado */
+.dropdown-menu {
+  background-color: #f3e5d0; /* tono beige claro */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #5a3e2b; /* Marrón tierra */
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #e0c9aa;
+  color: #3b2a1d;
+}
