@@ -6,7 +6,8 @@ export const CartProvider = ({ children }) => {
   // Intentamos cargar el carrito desde localStorage
   const [cart, setCart] = useState(() => {
     const storedCart = localStorage.getItem("cart");
-    return storedCart ? JSON.parse(storedCart) : [];
+    // Inicializa el carrito como un array vacío si no hay datos en localStorage
+    return storedCart ? JSON.parse(storedCart) : []; 
   });
 
   // Guardar cambios en localStorage cada vez que cambia el carrito
@@ -42,8 +43,25 @@ export const CartProvider = ({ children }) => {
     return cart.some(item => item.id === id);
   };
 
+  // Función para calcular el total
+  const getTotal = () => {
+    return cart.reduce((acc, item) => acc + (item.precio * item.quantity), 0);
+  };
+
+  const total = getTotal();
+
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clear, isInCart }}>
+    <CartContext.Provider 
+      value={{ 
+        cart, 
+        addItem, 
+        removeItem, 
+        clear, 
+        isInCart,
+        total 
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

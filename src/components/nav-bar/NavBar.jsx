@@ -20,8 +20,8 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/contact">
-              Contacto
+            <NavLink className="nav-link" to="/medios-de-pago">
+              Medio de pago
             </NavLink>
           </li>
           <li className="nav-item">
