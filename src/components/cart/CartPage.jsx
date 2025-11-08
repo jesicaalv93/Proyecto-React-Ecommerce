@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
-import Checkout from "./Checkout"; // Importamos el formulario
+import Checkout from "../checkout/Checkout";
 import "./CartPage.css";
 
 const CartPage = () => {

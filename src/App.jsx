@@ -6,7 +6,7 @@ import CategoriesListContainer from "./components/categories-list-container/Cate
 import ProductsListContainer from "./components/products-list-container/ProductsListContainer";
 import ProductDetail from "./components/product-detail/ProductDetail";
 import CartPage from "./components/cart/CartPage";
-import Checkout from "./components/cart/Checkout.jsx";
+import Checkout from "./components/checkout/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./components/context/CartContext.jsx";
 
