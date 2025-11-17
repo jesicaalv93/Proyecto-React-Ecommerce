@@ -1,12 +1,7 @@
-# React + Vite
+#Web App de E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es el front-end de una Single Page Application desarrollada con React, creada en el marco del curso de React de Coderhouse (septiembre–noviembre 2025). La aplicación gestiona la visualización de productos, la navegación entre secciones y el funcionamiento del carrito de compras.
 
-Currently, two official plugins are available:
+Se utiliza una arquitectura basada en componentes reutilizables e incorpora los conceptos centrales de React: hooks, manejo de estado local y global, eventos y ruteo. La interfaz está estilada con Bootstrap, garantizando un diseño limpio y adaptable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+La aplicación se integra con Firebase, que actúa como servicio en la nube para almacenar el catálogo de productos y registrar las órdenes de compra generadas por los usuarios.

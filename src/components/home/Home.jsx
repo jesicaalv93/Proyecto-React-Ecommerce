@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Ruta de Firebase que funciona en tu proyecto
 import { db } from "../../firebase"; 
 import { collection, getDocs, query, where } from "firebase/firestore";
-// Ruta de CSS original restaurada
 import "./Home.css"; 
 
 const message = "Bienvenida a Latir";
@@ -17,14 +15,13 @@ function Home() {
     setLoading(true);
     setError(null);
 
-    // Consulta a Firebase para obtener productos destacados (destacado: true)
     const productsCollection = collection(db, "products");
     const featuredQuery = query(productsCollection, where("destacado", "==", true));
 
     getDocs(featuredQuery)
       .then((snapshot) => {
         const productsList = snapshot.docs.map((doc) => ({
-          id: doc.id, // 🚨 CRÍTICO: ID de Firebase (largo)
+          id: doc.id, 
           ...doc.data(),
         }));
         setFeaturedProducts(productsList);
@@ -42,7 +39,7 @@ function Home() {
     return (
       <div className="container my-5 text-center">
         <h1 className="fw-bold">{message}</h1>
-        <h3 className="mt-5 mb-4">Cargando productos destacados...</h3>
+        <p className="text-center mt-5">Cargando productos destacados...</p>;
       </div>
     );
   }

@@ -21,17 +21,11 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/medios-de-pago">
-              Medio de pago
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/cuidados">
-              Cómo cuidar tus prendas
+              Medios de pago
             </NavLink>
           </li>
         </ul>
 
-        {/* Carrito a la derecha */}
         <div>
           <CartWidget />
         </div>

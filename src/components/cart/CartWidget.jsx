@@ -6,7 +6,6 @@ import "./CartWidget.css";
 const CartWidget = () => {
   const { cart } = useContext(CartContext);
 
-  // Sumar la cantidad de todos los items
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
